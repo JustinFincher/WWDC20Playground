@@ -47,7 +47,7 @@ public class NodeGraphView: UIView, NodeGraphContainerViewDelegate
     
     func postInit() -> Void
     {
-        backgroundColor = UIColor.clear
+        backgroundColor = UIColor.systemBackground
         containerView = NodeGraphContainerView(frame: self.bounds, nodeGraphView:self)
         drawRectView = NodeGraphDrawRectView(frame: self.bounds, nodeGraphView:self)
         if let drawRectView = drawRectView,let containerView = containerView

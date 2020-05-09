@@ -5,11 +5,12 @@ open class NodeEditorViewController: UIViewController, NodeListTableViewControll
 
     let nodeEditorData : NodeGraphData = NodeGraphData()
     let nodeEditorView : NodeGraphScrollView = NodeGraphScrollView(frame: CGRect.zero, canvasSize: CGSize.init(width: 2000, height: 2000))
-    let loadingIndicator : UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+    let loadingIndicator : UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
     
     override public func viewDidLoad()
     {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.systemBackground
         
         AudioUniformProviderManager.shared.requestPermission()
         

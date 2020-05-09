@@ -25,7 +25,7 @@ class NodeGraphScrollView: UIScrollView, UIScrollViewDelegate, UIGestureRecogniz
     
     func postInit() -> Void
     {
-        self.backgroundColor = UIColor.init(displayP3Red: 239.0/255.0, green: 239.0/255.0, blue: 244.0/255.0, alpha: 1.0)
+        self.backgroundColor = UIColor.systemBackground
         self.isScrollEnabled = true
         self.maximumZoomScale = 1
         self.minimumZoomScale = 0.2

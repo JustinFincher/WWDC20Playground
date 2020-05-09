@@ -12,7 +12,7 @@ extension FileManager
 
 public extension UIView
 {
-    public func getSuperView(typeClass: AnyClass) -> UIView?
+    func getSuperView(typeClass: AnyClass) -> UIView?
     {
         weak var view : UIView? = self
         while view != nil, !view!.isKind(of: typeClass)
@@ -29,21 +29,21 @@ public extension UIView
 
 public extension CGRect
 {
-    public func center() -> CGPoint
+    func center() -> CGPoint
     {
         return CGPoint.init(x: self.origin.x + self.size.width / 2.0, y: self.origin.y + self.size.height / 2.0)
     }
 }
 public extension CGPoint
 {
-    public func applyOffset(x: CGFloat, y: CGFloat) -> CGPoint
+    func applyOffset(x: CGFloat, y: CGFloat) -> CGPoint
     {
         return CGPoint.init(x: self.x + x, y: self.y + y)
     }
 }
 public extension NSObject
 {
-    public class func getClassHierarchy() -> [AnyClass] {
+    class func getClassHierarchy() -> [AnyClass] {
         var hierarcy = [AnyClass]()
         hierarcy.append(self.classForCoder())
         var currentSuper: AnyClass? = class_getSuperclass(self.classForCoder())
@@ -55,7 +55,7 @@ public extension NSObject
         return hierarcy
     }
     
-    public class func getAllClasses() -> [AnyClass] {
+    class func getAllClasses() -> [AnyClass] {
         let expectedClassCount = objc_getClassList(nil, 0)
         let allClasses = UnsafeMutablePointer<AnyClass?>.allocate(capacity: Int(expectedClassCount))
         
@@ -73,7 +73,7 @@ public extension NSObject
         return classes
     }
 
-    public class func directSubclasses() -> [AnyClass]
+    class func directSubclasses() -> [AnyClass]
     {
         var result: Array<AnyClass> = []
         

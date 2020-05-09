@@ -23,7 +23,7 @@ public class NodePortView: UIView
                                                          height: frame.size.height))
         titleLabel.text = data.title;
         titleLabel.font = UIFont.init(name: Constant.fontBoldName, size: 10)
-        titleLabel.textColor = UIColor.gray.withAlphaComponent(0.8)
+        titleLabel.textColor = UIColor.placeholderText.withAlphaComponent(0.8)
         titleLabel.textAlignment = isOutPort ? .right : .left
         addSubview(titleLabel)
         

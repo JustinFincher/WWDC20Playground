@@ -2,8 +2,9 @@ import Foundation
 import UIKit
 import SpriteKit
 
-public class NodeView: UIView, UIGestureRecognizerDelegate
+public class NodeView: UIView, UIGestureRecognizerDelegate, UIContextMenuInteractionDelegate
 {
+    
     weak var data : NodeData?{
         didSet
         {
@@ -147,6 +148,8 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
     var longPress : UILongPressGestureRecognizer?
     var pan : UIPanGestureRecognizer?
     
+    var menuInteraction : UIContextMenuInteraction?
+    
     let inPortsContainer : UIView = UIView(frame: CGRect.zero)
     let outPortsContainer : UIView = UIView(frame: CGRect.zero)
     let titleLabel : UILabel = UILabel(frame: CGRect.zero)
@@ -222,6 +225,11 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
         customView.layer.masksToBounds = true
         customView.layer.cornerRadius = 8
         customView.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
+        
+        menuInteraction = UIContextMenuInteraction(delegate: self)
+        if let menuInteraction = menuInteraction {
+            self.addInteraction(menuInteraction)
+        }
     }
     
     func makeSelected() -> Void
@@ -243,6 +251,22 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
             self.customView.layer.borderColor = data.isSelected ? UIColor.black.withAlphaComponent(0.3).cgColor : UIColor.clear.cgColor
             self.customView.layer.borderWidth = data.isSelected ? 4 : 0
         }
+    }
+    
+    // MARK: - UIContextMenuInteractionDelegate
+    public func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+        
+
+          let delete = UIAction(title: "Delete",
+            image: UIImage(systemName: "trash.fill"),
+            attributes: [.destructive]) { action in
+                self.delete()
+           }
+
+           return UIContextMenuConfiguration(identifier: nil,
+             previewProvider: nil) { _ in
+             UIMenu(title: "Actions", children: [delete])
+           }
     }
     
     // MARK: - UIGestureRecognizerDelegate
@@ -284,11 +308,11 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
         }, delayFactor: 0.5)
         scaleAnimator?.startAnimation()
         
-        if self.isFirstResponder
-        {
-            self.resignFirstResponder()
-            UIMenuController.shared.setMenuVisible(false, animated: true)
-        }
+//        if self.isFirstResponder
+//        {
+//            self.resignFirstResponder()
+//            UIMenuController.shared.setMenuVisible(false, animated: true)
+//        }
     }
     
     @objc func handleLongPress(recognizer : UILongPressGestureRecognizer) -> Void
@@ -308,9 +332,9 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
                 self.markNodeMoved()
             })
             scaleAnimator?.startAnimation()
-            self.becomeFirstResponder()
-            UIMenuController.shared.setTargetRect(bounds, in: self)
-            UIMenuController.shared.setMenuVisible(true, animated: true)
+//            self.becomeFirstResponder()
+//            UIMenuController.shared.setTargetRect(bounds, in: self)
+//            UIMenuController.shared.setMenuVisible(true, animated: true)
             break
         case .ended:
             scaleAnimator?.stopAnimation(true)
@@ -369,8 +393,8 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
             {
                 graphContainerView?.dynamicAnimator?.addBehavior(attachmentBehavior)
             }
-            self.resignFirstResponder()
-            UIMenuController.shared.setMenuVisible(false, animated: true)
+//            self.resignFirstResponder()
+//            UIMenuController.shared.setMenuVisible(false, animated: true)
             break
         case .changed:
             if let attachmentBehavior = attachmentBehavior
@@ -434,9 +458,7 @@ public class NodeView: UIView, UIGestureRecognizerDelegate
         graphContainerView.delegate?.nodeMoved(nodeGraphContainerView: graphContainerView)
     }
     
-    // MARK : - Menu
-    
-    public override func delete(_ sender: Any?)
+    public func delete()
     {
         if let data = data {
             graphContainerView?.nodeGraphView?.dataSource?.delete(node: data)
