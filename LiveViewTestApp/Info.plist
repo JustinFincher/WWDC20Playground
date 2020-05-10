@@ -22,12 +22,12 @@
 	<string>public.app-category.graphics-design</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Audio Node in use</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LiveViewTestAppLaunchScreen</string>
 	<key>UIStatusBarHidden</key>
-	<true/>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Audio Node in use</string>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -7,7 +7,6 @@
 
 import UIKit
 import PlaygroundSupport
-import UserModule
 /// Instantiates a new instance of a live view.
 ///
 /// By default, this loads an instance of `LiveViewController` from `LiveView.storyboard`.
@@ -22,8 +21,8 @@ public func instantiateLiveView() -> PlaygroundLiveViewable {
 //        fatalError("LiveView.storyboard's initial scene is not a LiveViewController; please either update the storyboard or this function")
 //    }
     
-    //let naviVC = UINavigationController(rootViewController: UIViewController())
+    let naviVC = UINavigationController(rootViewController: UIViewController())
 
-    return UINavigationController(rootViewController: NodeEditorViewController())
-//    return naviVC
+//    return UINavigationController(rootViewController: NodeEditorViewController())
+    return naviVC
 }
