@@ -4,10 +4,6 @@
 <dict>
 	<key>Name</key>
 	<string>ChapterOneName</string>
-	<key>InitialUserPages</key>
-	<array>
-		<string>Page1.playgroundpage</string>
-	</array>
 	<key>Pages</key>
 	<array>
 		<string>Page1.playgroundpage</string>

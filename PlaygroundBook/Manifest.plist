@@ -13,9 +13,9 @@
 	<key>DevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>DeploymentTarget</key>
-	<string>$(PLAYGROUND_BOOK_DEPLOYMENT_TARGET_FOR_MANIFEST)</string>
+	<string>ios-current</string>
 	<key>SwiftVersion</key>
-	<string>$(SWIFT_VERSION)</string>
+	<string>5.1</string>
 	<key>Name</key>
 	<string>PlaygroundBookName</string>
 	<key>Chapters</key>
