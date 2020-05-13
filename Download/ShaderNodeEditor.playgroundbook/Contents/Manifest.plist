@@ -11,7 +11,7 @@
 	<key>ContentVersion</key>
 	<string>1.0.0</string>
 	<key>DeploymentTarget</key>
-	<string>ios13.0</string>
+	<string>ios-current</string>
 	<key>DevelopmentRegion</key>
 	<string>en</string>
 	<key>ImageReference</key>
@@ -21,11 +21,9 @@
 	<key>SupportsDarkMode</key>
 	<true/>
 	<key>SwiftVersion</key>
-	<string>5.0</string>
+	<string>5.1</string>
 	<key>UserAutoImportedAuxiliaryModules</key>
-	<array>
-		<string>BookAPI</string>
-	</array>
+	<array/>
 	<key>UserModuleMode</key>
 	<string>Limited</string>
 	<key>Version</key>
