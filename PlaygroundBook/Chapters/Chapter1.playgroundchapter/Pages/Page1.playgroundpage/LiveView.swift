@@ -38,6 +38,41 @@ struct ContentView: View {
                 Text("Allow Audio Permission")
                 }.disabled(store.audioPermissionEnabled)
         }
+            Section(header: Text("Tutorial: How to connect nodes")) {
+                VStack(alignment: .leading){
+                    HStack()
+                    {
+                        Image(uiImage: UIImage(named:"NodeTutorial1.jpg")!).resizable()
+                        .frame(width: Constant.tutorialRowHeight, height: Constant.tutorialRowHeight)
+                        Text("1. Drag the knot on any side of a node and a line would appear following your position").font(.footnote)
+                    }
+                    HStack()
+                    {
+                        Image(uiImage: UIImage(named:"NodeTutorial2.jpg")!).resizable()
+                            .frame(width: Constant.tutorialRowHeight, height: Constant.tutorialRowHeight)
+                            Text("2. The line would display in red if it cannot connect (no knot or invalid data format)").font(.footnote)
+                    }
+                    HStack()
+                    {
+                        Image(uiImage: UIImage(named:"NodeTutorial3.jpg")!).resizable()
+                        .frame(width: Constant.tutorialRowHeight, height: Constant.tutorialRowHeight)
+                            Text("3. The line would display in green if target knot is compatible").font(.footnote)
+                    }
+                    HStack()
+                    {
+                        Image(uiImage: UIImage(named:"NodeTutorial4.jpg")!).resizable()
+                        .frame(width: Constant.tutorialRowHeight, height: Constant.tutorialRowHeight)
+                            Text("4. Lift your finger when the line is green and it would be added between two knots").font(.footnote)
+                    }
+                    HStack()
+                    {
+                        Image(uiImage: UIImage(named:"NodeTutorial5.jpg")!).resizable()
+                        .frame(width: Constant.tutorialRowHeight, height: Constant.tutorialRowHeight)
+                            Text("5. Drag an already connected knot would make the line disconnected").font(.footnote)
+                            }
+                }
+                
+            }
         }
         .listStyle(GroupedListStyle())
             .environment(\.horizontalSizeClass, .regular)

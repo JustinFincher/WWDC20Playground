@@ -76,6 +76,14 @@
 		0D5F84EB246B683B00050D49 /* FloatSliderGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */; };
 		0D5F84ED246B703500050D49 /* AudioShader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F84EC246B703500050D49 /* AudioShader.jpg */; };
 		0DB9E24C246BBD4100897A36 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9E24B246BBD4100897A36 /* Binding.swift */; };
+		0DB9E252246BEB6900897A36 /* NodeTutorial4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E24D246BEB6800897A36 /* NodeTutorial4.jpg */; };
+		0DB9E253246BEB6900897A36 /* NodeTutorial5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E24E246BEB6800897A36 /* NodeTutorial5.jpg */; };
+		0DB9E254246BEB6900897A36 /* NodeTutorial2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E24F246BEB6900897A36 /* NodeTutorial2.jpg */; };
+		0DB9E255246BEB6900897A36 /* NodeTutorial1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E250246BEB6900897A36 /* NodeTutorial1.jpg */; };
+		0DB9E256246BEB6900897A36 /* NodeTutorial3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E251246BEB6900897A36 /* NodeTutorial3.jpg */; };
+		0DB9E25A246BED8E00897A36 /* Tech1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E257246BED8E00897A36 /* Tech1.jpg */; };
+		0DB9E25B246BED8E00897A36 /* Tech2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E258246BED8E00897A36 /* Tech2.jpg */; };
+		0DB9E25C246BED8E00897A36 /* Tech3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9E259246BED8E00897A36 /* Tech3.jpg */; };
 		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
 		5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E551EC42371FC3F00784365 /* Assets.xcassets */; };
 		5E6F7E592367B529008CC191 /* UserModules in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E6F7E582367B51E008CC191 /* UserModules */; };
@@ -218,6 +226,14 @@
 		0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatSliderGeneratorNodeData.swift; sourceTree = "<group>"; };
 		0D5F84EC246B703500050D49 /* AudioShader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AudioShader.jpg; sourceTree = "<group>"; };
 		0DB9E24B246BBD4100897A36 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		0DB9E24D246BEB6800897A36 /* NodeTutorial4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NodeTutorial4.jpg; sourceTree = "<group>"; };
+		0DB9E24E246BEB6800897A36 /* NodeTutorial5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NodeTutorial5.jpg; sourceTree = "<group>"; };
+		0DB9E24F246BEB6900897A36 /* NodeTutorial2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NodeTutorial2.jpg; sourceTree = "<group>"; };
+		0DB9E250246BEB6900897A36 /* NodeTutorial1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NodeTutorial1.jpg; sourceTree = "<group>"; };
+		0DB9E251246BEB6900897A36 /* NodeTutorial3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NodeTutorial3.jpg; sourceTree = "<group>"; };
+		0DB9E257246BED8E00897A36 /* Tech1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tech1.jpg; sourceTree = "<group>"; };
+		0DB9E258246BED8E00897A36 /* Tech2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tech2.jpg; sourceTree = "<group>"; };
+		0DB9E259246BED8E00897A36 /* Tech3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tech3.jpg; sourceTree = "<group>"; };
 		5E086DC02051C5A7004D8D25 /* ShaderNodeEditor.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaderNodeEditor.playgroundbook; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCF2051DF0F004D8D25 /* Manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
@@ -465,6 +481,14 @@
 				0D5F8499246B21A900050D49 /* Banner.jpg */,
 				0D5F84EC246B703500050D49 /* AudioShader.jpg */,
 				0D5F849A246B21AA00050D49 /* Cover.png */,
+				0DB9E257246BED8E00897A36 /* Tech1.jpg */,
+				0DB9E258246BED8E00897A36 /* Tech2.jpg */,
+				0DB9E259246BED8E00897A36 /* Tech3.jpg */,
+				0DB9E250246BEB6900897A36 /* NodeTutorial1.jpg */,
+				0DB9E24F246BEB6900897A36 /* NodeTutorial2.jpg */,
+				0DB9E251246BEB6900897A36 /* NodeTutorial3.jpg */,
+				0DB9E24D246BEB6800897A36 /* NodeTutorial4.jpg */,
+				0DB9E24E246BEB6800897A36 /* NodeTutorial5.jpg */,
 				0D5F849F246B432700050D49 /* UVNode.jpg */,
 				0D5F84A1246B454A00050D49 /* UVPlusBlue.jpg */,
 				0D5F84A3246B4A3000050D49 /* UVWithSinAsBlue.jpg */,
@@ -588,7 +612,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5F84ED246B703500050D49 /* AudioShader.jpg in Resources */,
+				0DB9E255246BEB6900897A36 /* NodeTutorial1.jpg in Resources */,
+				0DB9E256246BEB6900897A36 /* NodeTutorial3.jpg in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
+				0DB9E252246BEB6900897A36 /* NodeTutorial4.jpg in Resources */,
 				0D5F84A4246B4A3000050D49 /* UVWithSinAsBlue.jpg in Resources */,
 				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
 				0D5F849E246B3D6E00050D49 /* BasicAddOperation.jpg in Resources */,
@@ -597,6 +624,11 @@
 				0D5F849B246B21AA00050D49 /* Banner.jpg in Resources */,
 				0D5F84A8246B64E500050D49 /* NodeList.txt in Resources */,
 				0D5F849C246B21AA00050D49 /* Cover.png in Resources */,
+				0DB9E25B246BED8E00897A36 /* Tech2.jpg in Resources */,
+				0DB9E25A246BED8E00897A36 /* Tech1.jpg in Resources */,
+				0DB9E25C246BED8E00897A36 /* Tech3.jpg in Resources */,
+				0DB9E253246BEB6900897A36 /* NodeTutorial5.jpg in Resources */,
+				0DB9E254246BEB6900897A36 /* NodeTutorial2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

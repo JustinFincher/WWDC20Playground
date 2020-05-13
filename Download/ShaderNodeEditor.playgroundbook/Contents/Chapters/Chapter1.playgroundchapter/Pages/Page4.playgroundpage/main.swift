@@ -2,6 +2,7 @@
 //#-end-hidden-code
 //: # 🧑‍💻 Video Jockey
 //: VJ is like a DJ, but with visuals. Shaders are especially well-fit for such scenarios, let's make an audio-reactive shader that changes with music loudness! 🎶
+//:
 //: ![](AudioShader.jpg)
 //:
 //: **Follow these steps:**
