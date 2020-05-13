@@ -28,7 +28,9 @@ public class NodeListTableViewController: UIViewController, UIPopoverPresentatio
         let data : Array<NodeData.Type> = NodeInfoCacheManager.shared.getNodeClasses()
         
         tableViewDataSource = Dictionary(grouping: data, by: { nodeData in nodeData.nodeType() })
-        tableViewSectionDataSource = Array(tableViewDataSource.keys)
+        tableViewSectionDataSource = Array(tableViewDataSource.keys).sorted(by: { (a, b) -> Bool in
+            return a.rawValue < b.rawValue
+        })
         
         tableView.reloadData()
     }

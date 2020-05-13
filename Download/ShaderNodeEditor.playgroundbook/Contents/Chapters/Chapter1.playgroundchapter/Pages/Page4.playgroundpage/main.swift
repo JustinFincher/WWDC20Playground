@@ -7,7 +7,7 @@
 //: **Follow these steps:**
 //: - Add a uv center atan generator [Menu - Generator - UV Center Atan (atan(uv-vec2(0.5)))]
 //: - Add a audio db generator [Menu - Generator - Audio DB (float u_audiodb)]
-//: - Add a disc ray consumer [Menu - Consumer - Float Disc Ray]
+//: - Add a disc ray consumer [Menu - Consumer - Float Disc Ray] and connect audio db node to its fill rate knot
 //: - Add a circle outline consumer [Menu - Consumer - Float Circle Outline]
 //: - Add several float generator nodes, either a float value node [Menu - Generator - Float Generator] or a float slider node [Menu - Generator - Float Slider], and assign them to these fields: Ray Num 1, Ray Num 2 in Disc Ray node and In Radius, Out Radius in Circle Outline node.
 //:

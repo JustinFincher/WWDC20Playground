@@ -75,6 +75,7 @@
 		0D5F84E8246B66A900050D49 /* FloatUVCenterAtanNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F84E7246B66A800050D49 /* FloatUVCenterAtanNodeData.swift */; };
 		0D5F84EB246B683B00050D49 /* FloatSliderGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */; };
 		0D5F84ED246B703500050D49 /* AudioShader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F84EC246B703500050D49 /* AudioShader.jpg */; };
+		0DB9E24C246BBD4100897A36 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9E24B246BBD4100897A36 /* Binding.swift */; };
 		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
 		5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E551EC42371FC3F00784365 /* Assets.xcassets */; };
 		5E6F7E592367B529008CC191 /* UserModules in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E6F7E582367B51E008CC191 /* UserModules */; };
@@ -216,6 +217,7 @@
 		0D5F84E7246B66A800050D49 /* FloatUVCenterAtanNodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatUVCenterAtanNodeData.swift; sourceTree = "<group>"; };
 		0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatSliderGeneratorNodeData.swift; sourceTree = "<group>"; };
 		0D5F84EC246B703500050D49 /* AudioShader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AudioShader.jpg; sourceTree = "<group>"; };
+		0DB9E24B246BBD4100897A36 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		5E086DC02051C5A7004D8D25 /* ShaderNodeEditor.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaderNodeEditor.playgroundbook; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCF2051DF0F004D8D25 /* Manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 				0D5F84E7246B66A800050D49 /* FloatUVCenterAtanNodeData.swift */,
 				0D18D793246723DA000B0EBD /* Constant.swift */,
 				0D18D794246723DA000B0EBD /* Dynamic.swift */,
+				0DB9E24B246BBD4100897A36 /* Binding.swift */,
 				0D18D795246723DA000B0EBD /* Extensions.swift */,
 				0D0A359A246869E500585F70 /* Helper.swift */,
 				0D18D7CC246723DB000B0EBD /* AudioUniformProviderManager.swift */,
@@ -689,6 +692,7 @@
 				0D5F84E1246B662600050D49 /* NodePortKnotView.swift in Sources */,
 				0D5F84E2246B662600050D49 /* NodePortView.swift in Sources */,
 				0D5F84E3246B662600050D49 /* NodeValueCustomView.swift in Sources */,
+				0DB9E24C246BBD4100897A36 /* Binding.swift in Sources */,
 				0D5F84E4246B662600050D49 /* NodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

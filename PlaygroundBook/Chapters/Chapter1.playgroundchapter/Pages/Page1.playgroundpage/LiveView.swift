@@ -11,7 +11,7 @@ import SwiftUI
 import UserModule
 
 final class ContentViewStore: ObservableObject {
-    var audioPermissionEnabled = AudioUniformProviderManager.shared.hasRecordPermission() {
+    @Published var audioPermissionEnabled = AudioUniformProviderManager.shared.hasRecordPermission() {
         didSet {
             if audioPermissionEnabled {
                 AudioUniformProviderManager.shared.requestPermission()

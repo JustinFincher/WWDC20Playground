@@ -41,6 +41,7 @@ public extension CGPoint
         return CGPoint.init(x: self.x + x, y: self.y + y)
     }
 }
+
 public extension NSObject
 {
     class func getClassHierarchy() -> [AnyClass] {

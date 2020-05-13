@@ -1,8 +1,10 @@
 import UIKit
+import Combine
 
 @objc(FloatSliderGeneratorNodeData) public class FloatSliderGeneratorNodeData: NodeData
 {
     var value : Dynamic<Float> = Dynamic<Float>(0)
+    var valueSub : AnyCancellable?
     
     override class var defaultTitle: String { return "Float Slider (float a)" }
     override class var customViewHeight: CGFloat { return 60 }
@@ -47,17 +49,19 @@ import UIKit
         slider.minimumValueImage = UIImage.init(systemName: "0.square")
         slider.isContinuous = true
         slider.tintColor = UIColor.secondarySystemFill
-        slider.addTarget(self, action: #selector(sliderValueChanged(sender:)), for: .touchUpOutside)
-        slider.addTarget(self, action: #selector(sliderValueChanged(sender:)), for: .touchUpInside)
         slider.value = value.value
+        
+        valueSub = slider.publisher(for: .valueChanged)
+            .map { ($0 as! UISlider).value }
+            .debounce(for: .milliseconds(100), scheduler: RunLoop.main)
+            .receive(on: RunLoop.main)
+            .sink { (f) in
+                self.value.value = f
+           }
         
         value.bind { (newValue) in
             NotificationCenter.default.post(name: NSNotification.Name( Constant.notificationNameShaderModified), object: nil)
         }
-    }
-    
-    @objc func sliderValueChanged(sender: UISlider){
-        value.value = sender.value
     }
     
     override class func nodeType() -> NodeType
