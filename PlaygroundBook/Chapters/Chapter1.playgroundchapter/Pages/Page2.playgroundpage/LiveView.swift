@@ -9,4 +9,5 @@ import UIKit
 import UserModule
 import PlaygroundSupport
 
-PlaygroundPage.current.liveView = UINavigationController(rootViewController: NodeEditorViewController())
+//let liveVC = LiveViewController()
+PlaygroundPage.current.liveView = UINavigationController(rootViewController: LiveViewController());

@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatTimeNodeData: NodeData {
+@objc(FloatTimeNodeData) class FloatTimeNodeData: NodeData {
 
     override class var defaultTitle: String { return "Time (float u_time)" }
     override class var defaultCanHavePreview: Bool { return false }

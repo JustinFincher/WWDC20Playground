@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatSinNodeData: NodeData
+@objc(FloatSinNodeData) class FloatSinNodeData: NodeData
 {
     override class var defaultTitle: String { return "Float Sin (float b = sin(a))" }
     override class var defaultCanHavePreview: Bool { return true }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FloatAddWithValueNodeData: NodeData, UITextFieldDelegate
+@objc(FloatAddWithValueNodeData) class FloatAddWithValueNodeData: NodeData, UITextFieldDelegate
 {
     
     var aValue : Dynamic<Float> = Dynamic<Float>(0)

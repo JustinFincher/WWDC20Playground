@@ -83,21 +83,6 @@ public extension NSObject
         let autoreleasingAllClasses = AutoreleasingUnsafeMutablePointer<AnyClass>(allClasses)
         let actualClassCount: Int32 = objc_getClassList(autoreleasingAllClasses, expectedClassCount)
         
-//        DispatchQueue.concurrentPerform(iterations: Int(actualClassCount)) { (index) in
-//
-//            if let currentClass: AnyClass = allClasses[index]
-//            {
-//                if let currentSuper = class_getSuperclass(currentClass)
-//                {
-//                    if (String(describing: currentSuper) == String(describing: self))
-//                    {
-//                        result.append(currentClass)
-//                    }
-//                }
-//            }
-//
-//        }
-        
         for i in 0 ..< actualClassCount
         {
             if let currentClass: AnyClass = allClasses[Int(i)]

@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec2RulerGeneratorNodeData: NodeData
+@objc(Vec2RulerGeneratorNodeData) class Vec2RulerGeneratorNodeData: NodeData
 {
     var value : Dynamic<CGPoint> = Dynamic<CGPoint>(CGPoint.zero)
     

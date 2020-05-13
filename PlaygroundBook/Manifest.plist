@@ -5,7 +5,7 @@
 	<key>Version</key>
 	<string>7.0</string>
 	<key>ImageReference</key>
-	<string>image.png</string>
+	<string>Cover.png</string>
 	<key>ContentIdentifier</key>
 	<string>$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)</string>
 	<key>ContentVersion</key>

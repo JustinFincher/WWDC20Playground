@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatAtanNodeData: NodeData
+@objc(FloatAtanNodeData) class FloatAtanNodeData: NodeData
 {
     override class var defaultTitle: String { return "Float Atan" }
     override class var defaultCanHavePreview: Bool { return false }

@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatAudioDBNodeData: NodeData {
+@objc(FloatAudioDBNodeData) class FloatAudioDBNodeData: NodeData {
 
     override class var defaultTitle: String { return "Audio DB (float u_audiodb)" }
     override class var defaultCanHavePreview: Bool { return false }

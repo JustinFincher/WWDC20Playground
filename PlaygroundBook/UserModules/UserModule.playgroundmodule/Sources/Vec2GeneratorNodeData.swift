@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec2GeneratorNodeData: NodeData, UITextFieldDelegate
+@objc(Vec2GeneratorNodeData) class Vec2GeneratorNodeData: NodeData, UITextFieldDelegate
 {
     var xValue : Dynamic<Float> = Dynamic<Float>(0)
     var yValue : Dynamic<Float> = Dynamic<Float>(0)

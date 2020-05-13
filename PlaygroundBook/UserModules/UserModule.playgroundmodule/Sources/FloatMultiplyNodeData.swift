@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatMultiplyNodeData: NodeData
+@objc(FloatMultiplyNodeData) class FloatMultiplyNodeData: NodeData
 {
     override class var defaultTitle: String { return "Float Multiply (float c = a * b)" }
     override class var defaultCanHavePreview: Bool { return true }

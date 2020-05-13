@@ -2,32 +2,53 @@ import UIKit
 import AVFoundation
 import SpriteKit
 
-class AudioUniformProviderManager: NSObject
+open class AudioUniformProviderManager: NSObject
 {
-    static let shared = AudioUniformProviderManager()
+    public static let shared = AudioUniformProviderManager()
     let audioUniform : SKUniform = SKUniform(name: "u_audiodb", float: 0)
-    var timer : Timer?
+    var loudnessTimer : Timer?
+    var recorderResetTimer : Timer?
     
     override init()
     {
         super.init()
-        timer = Timer.scheduledTimer(timeInterval: 1.0/60.0, target: self, selector: #selector(self.updateUniform), userInfo: nil, repeats: true)
+        loudnessTimer = Timer.scheduledTimer(timeInterval: 1.0/60.0, target: self, selector: #selector(self.updateUniform), userInfo: nil, repeats: true)
+        recorderResetTimer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.resetRecorder), userInfo: nil, repeats: true)
     }
     
     deinit {
         audioRecorder?.stop()
-        timer?.invalidate()
+        loudnessTimer?.invalidate()
+        recorderResetTimer?.invalidate()
     }
     
-    func requestPermission() -> Void
+    public func hasRecordPermission() -> Bool
     {
-        AVAudioSession.sharedInstance().requestRecordPermission() { [unowned self] allowed in
-            DispatchQueue.main.async {
-                if allowed
-                {
-                    self.initAudio()
+        switch AVAudioSession.sharedInstance().recordPermission {
+            case .denied, .undetermined:
+                return false
+            case .granted:
+                return true
+            default:
+                return false;
+        }
+    }
+    
+    public func requestPermission() -> Void
+    {
+        if (!AudioUniformProviderManager.shared.hasRecordPermission())
+        {
+            AVAudioSession.sharedInstance().requestRecordPermission() { [unowned self] allowed in
+                DispatchQueue.main.async {
+                    if allowed && self.audioRecorder == nil
+                    {
+                        self.initAudio()
+                    }
                 }
             }
+        }else if (self.audioRecorder == nil)
+        {
+            self.initAudio()
         }
     }
     
@@ -79,6 +100,17 @@ class AudioUniformProviderManager: NSObject
             audioRecorder.updateMeters()
             audioUniform.floatValue = 1.0 + audioRecorder.averagePower(forChannel: 0) / 80.0
             //print("\(audioRecorder.averagePower(forChannel: 0))  \(audioRecorder.peakPower(forChannel: 0))")
+//            audioRecorder.stop()
+        }
+    }
+    
+    @objc public func resetRecorder() -> Void{
+        if let audioRecorder = audioRecorder
+        {
+            audioRecorder.stop()
+            audioRecorder.prepareToRecord()
+            audioRecorder.isMeteringEnabled = true
+            audioRecorder.record()
         }
     }
 }

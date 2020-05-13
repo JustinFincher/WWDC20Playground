@@ -50,11 +50,11 @@ public class NodeGraphDrawRectView: UIView, NodeGraphContainerViewDataSource
             let connectionInPos = dragginRelativePortData.isInPortRelativeToConnection() ? dragStartPos : dragEndPos
             let connectionOutPos = dragginRelativePortData.isInPortRelativeToConnection() ? dragEndPos : dragStartPos
             canConnect = nodeGraphDataSource.canConnectPointIn(graphView: nodeGraphView, nodeOutPort: connectionInPos, nodeInPort: connectionOutPos)
-            lineColor = canConnect ? UIColor.green.withAlphaComponent(0.6) : UIColor.red.withAlphaComponent(0.6)
+            lineColor = canConnect ? Constant.lineSupportedColor : Constant.lineRejectColor
             drawLineConnection(inPoint: connectionInPos, outPoint: connectionOutPos, color: lineColor, width: 8.0)
         }
         
-        lineColor = UIColor.yellow.withAlphaComponent(0.6)
+        lineColor = Constant.lineNormalColor
         nodeGraphView.dataSource?.allNodeData().forEach({ (connectionOutNodeData) in
             connectionOutNodeData.inPorts.forEach({ (connectionOutNodePortData) in
                 connectionOutNodePortData.connections.forEach({ (nodeConnectioData) in

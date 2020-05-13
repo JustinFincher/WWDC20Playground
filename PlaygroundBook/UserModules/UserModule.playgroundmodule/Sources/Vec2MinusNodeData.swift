@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec2MinusNodeData: NodeData
+@objc(Vec2MinusNodeData) class Vec2MinusNodeData: NodeData
 {
     override class var defaultTitle: String { return "Vec2 Minus (vec2 c = a - b)" }
     override class var defaultCanHavePreview: Bool { return true }

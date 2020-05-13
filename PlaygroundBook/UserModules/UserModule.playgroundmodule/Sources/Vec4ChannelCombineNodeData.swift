@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec4ChannelCombineNodeData: NodeData
+@objc(Vec4ChannelCombineNodeData) class Vec4ChannelCombineNodeData: NodeData
 {
     override class var defaultTitle: String { return "Vec4 Combine (vec4 c = vec4(r,g,b,a))" }
     override class var defaultCanHavePreview: Bool { return true }

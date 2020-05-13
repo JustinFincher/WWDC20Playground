@@ -1,17 +1,22 @@
+//
+//  FloatCircleOutlineNodeData.swift
+//  PlaygroundBook
+//
+//  Created by fincher on 5/13/20.
+//
 import UIKit
 
-@objc(FloatRayDiscNodeData) class FloatRayDiscNodeData: NodeData
+@objc(FloatCircleOutlineNodeData) class FloatCircleOutlineNodeData: NodeData
 {
-    override class var defaultTitle: String { return "Float Disc Ray" }
+    override class var defaultTitle: String { return "Float Circle Outline" }
     override class var defaultCanHavePreview: Bool { return true }
     override class var defaultPreviewOutportIndex: Int { return 0 }
     override class var defaultInPorts: Array<NodePortData>
     {
         return [
-            FloatNodePortData(title: "Atan"),
-            FloatNodePortData(title: "Fill Rate"),
-            FloatNodePortData(title: "Ray Num 1"),
-            FloatNodePortData(title: "Ray Num 2"),
+            FloatNodePortData(title: "Value"),
+            FloatNodePortData(title: "In Radius"),
+            FloatNodePortData(title: "Out Radius")
         ]
     }
     override class var defaultOutPorts: Array<NodePortData>
@@ -27,7 +32,7 @@ import UIKit
         """
         \(shaderCommentHeader())
         \(declareInPortsExpression())
-        \(outPorts[0].requiredType.defaultCGType) \(outPorts[0].getPortVariableName()) = smoothstep(0.0,2.0,smoothstep(10.0 * (1.0 - \(inPorts[1].getPortVariableName())), 0.5, sin(\(inPorts[0].getPortVariableName()) * \(inPorts[2].getPortVariableName()) + u_time)* 1.0 + cos(\(inPorts[0].getPortVariableName()) * \(inPorts[3].getPortVariableName()))* 1.0));
+        \(outPorts[0].requiredType.defaultCGType) \(outPorts[0].getPortVariableName()) = smoothstep(\(inPorts[0].getPortVariableName()),\(inPorts[0].getPortVariableName()),length(vec2(0.5)-v_tex_coord)*2.0 - \(inPorts[1].getPortVariableName())) - smoothstep(\(inPorts[0].getPortVariableName()),\(inPorts[0].getPortVariableName()),length(vec2(0.5)-v_tex_coord)*2.0 - \(inPorts[2].getPortVariableName()));
         """
         return result
     }

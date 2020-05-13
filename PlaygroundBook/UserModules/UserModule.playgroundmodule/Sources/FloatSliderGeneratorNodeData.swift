@@ -1,11 +1,11 @@
 import UIKit
 
-@objc(FloatGeneratorNodeData) public class FloatGeneratorNodeData: NodeData, UITextFieldDelegate
+@objc(FloatSliderGeneratorNodeData) public class FloatSliderGeneratorNodeData: NodeData
 {
     var value : Dynamic<Float> = Dynamic<Float>(0)
     
-    override class var defaultTitle: String { return "Float Generator (float a)" }
-    override class var customViewHeight: CGFloat { return 100 }
+    override class var defaultTitle: String { return "Float Slider (float a)" }
+    override class var customViewHeight: CGFloat { return 60 }
     override class var defaultCanHavePreview: Bool { return false }
     override class var defaultPreviewOutportIndex: Int { return -1 }
     override class var defaultInPorts: Array<NodePortData>
@@ -39,42 +39,25 @@ import UIKit
     
     override func setupCustomView(view: UIView)
     {
-        let inputField : UITextField = UITextField(frame: view.bounds.inset(by: UIEdgeInsets.init(top: 8, left: 8, bottom: 8, right: 8)))
-        view.addSubview(inputField)
-        inputField.backgroundColor = UIColor.clear
-        inputField.font = UIFont.init(name: Constant.fontBoldName, size: 80)
-        inputField.adjustsFontSizeToFitWidth = true
-        inputField.minimumFontSize = 28
-        inputField.placeholder = "Value"
-        inputField.text = "\(value.value)"
-        inputField.keyboardType = .decimalPad
-        inputField.delegate = self
+        let slider : UISlider = UISlider(frame: view.bounds.inset(by: UIEdgeInsets.init(top: 8, left: 8, bottom: 8, right: 8)))
+        view.addSubview(slider)
+        slider.maximumValue = 1
+        slider.maximumValueImage = UIImage.init(systemName: "1.square")
+        slider.minimumValue = 0
+        slider.minimumValueImage = UIImage.init(systemName: "0.square")
+        slider.isContinuous = true
+        slider.tintColor = UIColor.secondarySystemFill
+        slider.addTarget(self, action: #selector(sliderValueChanged(sender:)), for: .touchUpOutside)
+        slider.addTarget(self, action: #selector(sliderValueChanged(sender:)), for: .touchUpInside)
+        slider.value = value.value
         
         value.bind { (newValue) in
             NotificationCenter.default.post(name: NSNotification.Name( Constant.notificationNameShaderModified), object: nil)
         }
     }
     
-    // MARK - UITextFieldDelegate
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
-        textField.resignFirstResponder()
-        if let text = textField.text, let nextValue = Float(text)
-        {
-            value.value = nextValue
-            textField.text = "\(nextValue)"
-        }
-        return true
-    }
-    
-    public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool
-    {
-        if let text = textField.text, let nextValue = Float(text)
-        {
-            value.value = nextValue
-            textField.text = "\(nextValue)"
-        }
-        return true
+    @objc func sliderValueChanged(sender: UISlider){
+        value.value = sender.value
     }
     
     override class func nodeType() -> NodeType

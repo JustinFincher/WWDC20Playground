@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec2LengthNodeData: NodeData
+@objc(Vec2LengthNodeData) class Vec2LengthNodeData: NodeData
 {
     override class var defaultTitle: String { return "Vec2 Length" }
     override class var defaultCanHavePreview: Bool { return false }

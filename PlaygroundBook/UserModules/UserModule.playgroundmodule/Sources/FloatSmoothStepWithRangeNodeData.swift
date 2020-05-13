@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatSmoothStepWithRangeNodeData: NodeData, UITextFieldDelegate
+@objc(FloatSmoothStepWithRangeNodeData) class FloatSmoothStepWithRangeNodeData: NodeData, UITextFieldDelegate
 {
     
     var leftValue : Dynamic<Float> = Dynamic<Float>(0)

@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec2ChannelSplitNodeData: NodeData
+@objc(Vec2ChannelSplitNodeData) class Vec2ChannelSplitNodeData: NodeData
 {
     override class var defaultTitle: String { return "Vec2 Split (float x = v.x, y = v.y)" }
     override class var defaultCanHavePreview: Bool { return false }

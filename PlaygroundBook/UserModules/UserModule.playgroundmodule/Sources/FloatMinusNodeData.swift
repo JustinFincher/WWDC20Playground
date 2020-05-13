@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatMinusNodeData: NodeData {
+@objc(FloatMinusNodeData) class FloatMinusNodeData: NodeData {
     override class var defaultTitle: String { return "Float Minus (float c = a - b)" }
     override class var defaultCanHavePreview: Bool { return true }
     override class var defaultPreviewOutportIndex: Int { return 0 }

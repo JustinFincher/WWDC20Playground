@@ -1,6 +1,6 @@
 import UIKit
 
-@objc public class FloatAddNodeData: NodeData
+@objc(FloatAddNodeData) public class FloatAddNodeData: NodeData
 {
     override class var defaultTitle: String { return "Float Add (float c = a + b)" }
     override class var defaultCanHavePreview: Bool { return true }

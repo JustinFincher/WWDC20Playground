@@ -1,6 +1,6 @@
 import UIKit
 
-class Vec2TexCoordNodeData: NodeData {
+@objc(Vec2TexCoordNodeData) class Vec2TexCoordNodeData: NodeData {
     override class var defaultTitle: String { return "UV (vec2 v_tex_coord)" }
     override class var defaultCanHavePreview: Bool { return true }
     override class var defaultPreviewOutportIndex: Int { return 0 }

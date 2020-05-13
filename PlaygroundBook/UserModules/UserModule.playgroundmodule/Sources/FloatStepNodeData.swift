@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatStepNodeData: NodeData {
+@objc(FloatStepNodeData) class FloatStepNodeData: NodeData {
     override class var defaultTitle: String { return "Float Step" }
     override class var defaultCanHavePreview: Bool { return true }
     override class var defaultPreviewOutportIndex: Int { return 0 }

@@ -5,28 +5,18 @@ open class NodeEditorViewController: UIViewController, NodeListTableViewControll
 
     let nodeEditorData : NodeGraphData = NodeGraphData()
     let nodeEditorView : NodeGraphScrollView = NodeGraphScrollView(frame: CGRect.zero, canvasSize: CGSize.init(width: 2000, height: 2000))
-    let loadingIndicator : UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+    let alert = UIAlertController(title: "\nLoading...", message: "Finding data models for all nodes, need 10 seconds", preferredStyle: .alert)
     
     override public func viewDidLoad()
     {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.systemBackground
+        self.view.backgroundColor = UIColor.systemGroupedBackground
         
         AudioUniformProviderManager.shared.requestPermission()
-        
-        loadingIndicator.frame = CGRect.init(origin: CGPoint.init(x:
-            (self.view.frame.size.width - loadingIndicator.frame.size.width)/2.0, y:
-            (self.view.frame.size.height - loadingIndicator.frame.size.height)/2.0), size: loadingIndicator.frame.size)
-        loadingIndicator.autoresizingMask = [.flexibleBottomMargin, .flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin]
-        self.view.addSubview(loadingIndicator)
-        loadingIndicator.startAnimating()
-        
         
         self.title = "Shader Node Editor"
         nodeEditorView.frame = self.view.bounds
         nodeEditorView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        nodeEditorView.isUserInteractionEnabled = false
-        nodeEditorView.alpha = 0.0
         self.view.addSubview(nodeEditorView)
         
         if let nodeGraphView : NodeGraphView = nodeEditorView.nodeGraphView
@@ -42,18 +32,33 @@ open class NodeEditorViewController: UIViewController, NodeListTableViewControll
             }
         }
         
-        DispatchQueue.global(qos: .background).async
-            {
-                print("warmUp +")
-                NodeInfoCacheManager.shared.warmUp()
-                DispatchQueue.main.async
-                    {
-                        print("warmUp -")
-                        self.nodeEditorView.isUserInteractionEnabled = true
-                        UIView.animate(withDuration: 0.5, animations: {
-                            self.nodeEditorView.alpha = 1.0
-                        })
-                }
+        if (!NodeInfoCacheManager.shared.isNodeListLoaded())
+        {
+            nodeEditorView.isUserInteractionEnabled = false
+            let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y:0, width: 50, height: 50))
+            loadingIndicator.hidesWhenStopped = true
+            loadingIndicator.alpha = 0
+            loadingIndicator.style = UIActivityIndicatorView.Style.medium
+            loadingIndicator.startAnimating();
+            alert.view.addSubview(loadingIndicator)
+            present(alert, animated: true, completion: {
+                UIView.animate(withDuration: 0.5, animations: {
+                    loadingIndicator.alpha = 1
+                })
+                loadingIndicator.frame = CGRect(x: (self.alert.view.frame.width - 50) / 2.0, y: 0, width: 50, height: 50)
+            })
+
+            DispatchQueue.global(qos: .background).async
+                {
+                    var nodeClassNames : Array<String> = []
+                    NodeInfoCacheManager.shared.reload(force: false, blankArr:&nodeClassNames, useReflection: Constant.useReflectionToGetNodeList)
+                    DispatchQueue.main.async
+                        {
+                            self.nodeEditorView.isUserInteractionEnabled = true
+                            if let vc = self.presentedViewController, vc is UIAlertController { self.dismiss(animated: true, completion: nil)
+                            }
+                    }
+            }
         }
     }
     

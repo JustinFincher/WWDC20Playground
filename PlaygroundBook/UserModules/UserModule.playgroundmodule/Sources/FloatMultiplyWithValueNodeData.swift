@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatMultiplyWithValueNodeData: NodeData, UITextFieldDelegate
+@objc(FloatMultiplyWithValueNodeData) class FloatMultiplyWithValueNodeData: NodeData, UITextFieldDelegate
 {
     
     var aValue : Dynamic<Float> = Dynamic<Float>(0)

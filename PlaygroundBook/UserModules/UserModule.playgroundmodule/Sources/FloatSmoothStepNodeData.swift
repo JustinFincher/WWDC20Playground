@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatSmoothStepNodeData: NodeData
+@objc(FloatSmoothStepNodeData) class FloatSmoothStepNodeData: NodeData
 {
     override class var defaultTitle: String { return "Float SmoothStep" }
     override class var defaultCanHavePreview: Bool { return true }

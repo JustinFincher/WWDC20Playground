@@ -12,7 +12,11 @@ public class Constant: NSObject
     public static let nodeConnectionCurveControlOffset : CGFloat = 90
     public static let fontObliqueName = "Avenir-Oblique"
     public static let fontBoldName = "Avenir-Black"
-    public static let nodeKnotIndicatorColor = UIColor.tertiarySystemFill.withAlphaComponent(0.1)
+    public static let nodeKnotIndicatorColor = UIColor.tertiarySystemFill.withAlphaComponent(0.4)
+    public static let lineNormalColor = UIColor.systemYellow.withAlphaComponent(0.6)
+    public static let lineRejectColor = UIColor.systemRed.withAlphaComponent(0.6)
+    public static let lineSupportedColor = UIColor.systemGreen.withAlphaComponent(0.6)
     public static let notificationNameShaderModified = "notificationNameShaderModified"
     public static let notificationNamePowerUpEnabledForPlayground = "notificationNamePowerUpEnabledForPlayground"
+    public static let useReflectionToGetNodeList : Bool = false
 }

@@ -25,10 +25,7 @@ public class NodeListTableViewController: UIViewController, UIPopoverPresentatio
         self.view.addSubview(tableView)
         tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        let data : Array<NodeData.Type> = NodeInfoCacheManager.shared.getNodeClasses().map
-        {
-            return $0 as! NodeData.Type
-        }
+        let data : Array<NodeData.Type> = NodeInfoCacheManager.shared.getNodeClasses()
         
         tableViewDataSource = Dictionary(grouping: data, by: { nodeData in nodeData.nodeType() })
         tableViewSectionDataSource = Array(tableViewDataSource.keys)

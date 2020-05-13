@@ -255,12 +255,12 @@ public class NodeView: UIView, UIGestureRecognizerDelegate, UIContextMenuInterac
     
     // MARK: - UIContextMenuInteractionDelegate
     public func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
-        
-        let share = UIAction(title: "Share Shader Source",
-         image: UIImage(systemName: "square.and.arrow.up.fill"),
-         attributes: []) { action in
-            
-        }
+//        
+//        let share = UIAction(title: "Share Shader Source",
+//         image: UIImage(systemName: "square.and.arrow.up.fill"),
+//         attributes: []) { action in
+//            
+//        }
         
           let delete = UIAction(title: "Delete",
             image: UIImage(systemName: "trash.fill"),
@@ -270,7 +270,7 @@ public class NodeView: UIView, UIGestureRecognizerDelegate, UIContextMenuInterac
 
            return UIContextMenuConfiguration(identifier: nil,
              previewProvider: nil) { _ in
-             UIMenu(title: "Edit", children: [share,delete])
+             UIMenu(title: "Edit", children: [delete])
            }
     }
     

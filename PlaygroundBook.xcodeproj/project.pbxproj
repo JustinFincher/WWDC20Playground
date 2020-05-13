@@ -7,61 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0A359624685D7A00585F70 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0A359524685D7A00585F70 /* image.png */; };
 		0D18D78E24671AF0000B0EBD /* libUserModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6F7E742368FF15008CC191 /* libUserModule.a */; };
-		0D18D7CE246723DB000B0EBD /* NodeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D790246723DA000B0EBD /* NodeEditorViewController.swift */; };
-		0D18D7CF246723DB000B0EBD /* NodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D791246723DA000B0EBD /* NodeListTableViewController.swift */; };
-		0D18D7D0246723DB000B0EBD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D793246723DA000B0EBD /* Constant.swift */; };
-		0D18D7D1246723DB000B0EBD /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D794246723DA000B0EBD /* Dynamic.swift */; };
-		0D18D7D2246723DB000B0EBD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D795246723DA000B0EBD /* Extensions.swift */; };
-		0D18D7D3246723DC000B0EBD /* NodeConnectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D797246723DA000B0EBD /* NodeConnectionData.swift */; };
-		0D18D7D4246723DC000B0EBD /* NodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D798246723DA000B0EBD /* NodeData.swift */; };
-		0D18D7D5246723DC000B0EBD /* NodeGraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D799246723DA000B0EBD /* NodeGraphData.swift */; };
-		0D18D7D6246723DC000B0EBD /* NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79A246723DA000B0EBD /* NodePortData.swift */; };
-		0D18D7D7246723DC000B0EBD /* ShaderDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79B246723DA000B0EBD /* ShaderDataType.swift */; };
-		0D18D7D8246723DC000B0EBD /* ShaderFloatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79E246723DB000B0EBD /* ShaderFloatType.swift */; };
-		0D18D7D9246723DC000B0EBD /* ShaderVec2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79F246723DB000B0EBD /* ShaderVec2Type.swift */; };
-		0D18D7DA246723DC000B0EBD /* ShaderVec3Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A0246723DB000B0EBD /* ShaderVec3Type.swift */; };
-		0D18D7DB246723DC000B0EBD /* ShaderVec4Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A1246723DB000B0EBD /* ShaderVec4Type.swift */; };
-		0D18D7DC246723DC000B0EBD /* FloatAddNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A3246723DB000B0EBD /* FloatAddNodeData.swift */; };
-		0D18D7DD246723DC000B0EBD /* FloatAddWithValueNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A4246723DB000B0EBD /* FloatAddWithValueNodeData.swift */; };
-		0D18D7DE246723DC000B0EBD /* FloatAtanNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A5246723DB000B0EBD /* FloatAtanNodeData.swift */; };
-		0D18D7DF246723DC000B0EBD /* FloatAudioDBNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A6246723DB000B0EBD /* FloatAudioDBNodeData.swift */; };
-		0D18D7E0246723DC000B0EBD /* FloatCircleNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A7246723DB000B0EBD /* FloatCircleNodeData.swift */; };
-		0D18D7E1246723DC000B0EBD /* FloatGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A8246723DB000B0EBD /* FloatGeneratorNodeData.swift */; };
-		0D18D7E2246723DC000B0EBD /* FloatMinusNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A9246723DB000B0EBD /* FloatMinusNodeData.swift */; };
-		0D18D7E3246723DC000B0EBD /* FloatMultiplyNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AA246723DB000B0EBD /* FloatMultiplyNodeData.swift */; };
-		0D18D7E4246723DC000B0EBD /* FloatMultiplyWithValueNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AB246723DB000B0EBD /* FloatMultiplyWithValueNodeData.swift */; };
-		0D18D7E5246723DC000B0EBD /* FloatRayDiscNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AC246723DB000B0EBD /* FloatRayDiscNodeData.swift */; };
-		0D18D7E6246723DC000B0EBD /* FloatSinNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AD246723DB000B0EBD /* FloatSinNodeData.swift */; };
-		0D18D7E7246723DC000B0EBD /* FloatSmoothStepNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AE246723DB000B0EBD /* FloatSmoothStepNodeData.swift */; };
-		0D18D7E8246723DC000B0EBD /* FloatSmoothStepWithRangeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AF246723DB000B0EBD /* FloatSmoothStepWithRangeNodeData.swift */; };
-		0D18D7E9246723DC000B0EBD /* FloatStepNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B0246723DB000B0EBD /* FloatStepNodeData.swift */; };
-		0D18D7EA246723DC000B0EBD /* FloatTimeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B1246723DB000B0EBD /* FloatTimeNodeData.swift */; };
-		0D18D7EB246723DC000B0EBD /* Vec2AddNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B2246723DB000B0EBD /* Vec2AddNodeData.swift */; };
-		0D18D7EC246723DC000B0EBD /* Vec2ChannelCombineNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B3246723DB000B0EBD /* Vec2ChannelCombineNodeData.swift */; };
-		0D18D7ED246723DD000B0EBD /* Vec2ChannelSplitNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B4246723DB000B0EBD /* Vec2ChannelSplitNodeData.swift */; };
-		0D18D7EE246723DD000B0EBD /* Vec2GeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B5246723DB000B0EBD /* Vec2GeneratorNodeData.swift */; };
-		0D18D7EF246723DD000B0EBD /* Vec2LengthNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B6246723DB000B0EBD /* Vec2LengthNodeData.swift */; };
-		0D18D7F0246723DD000B0EBD /* Vec2MinusNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B7246723DB000B0EBD /* Vec2MinusNodeData.swift */; };
-		0D18D7F1246723DD000B0EBD /* Vec2RulerGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B8246723DB000B0EBD /* Vec2RulerGeneratorNodeData.swift */; };
-		0D18D7F2246723DD000B0EBD /* Vec2TexCoordNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B9246723DB000B0EBD /* Vec2TexCoordNodeData.swift */; };
-		0D18D7F3246723DD000B0EBD /* Vec4ChannelCombineNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BA246723DB000B0EBD /* Vec4ChannelCombineNodeData.swift */; };
-		0D18D7F4246723DD000B0EBD /* FloatNodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BC246723DB000B0EBD /* FloatNodePortData.swift */; };
-		0D18D7F5246723DD000B0EBD /* Vec2NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BD246723DB000B0EBD /* Vec2NodePortData.swift */; };
-		0D18D7F6246723DD000B0EBD /* Vec3NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BE246723DB000B0EBD /* Vec3NodePortData.swift */; };
-		0D18D7F7246723DD000B0EBD /* Vec4NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BF246723DB000B0EBD /* Vec4NodePortData.swift */; };
-		0D18D7F8246723DD000B0EBD /* AxisRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C1246723DB000B0EBD /* AxisRulerView.swift */; };
-		0D18D7F9246723DD000B0EBD /* NodeGraphContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C3246723DB000B0EBD /* NodeGraphContainerView.swift */; };
-		0D18D7FA246723DD000B0EBD /* NodeGraphDrawRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C4246723DB000B0EBD /* NodeGraphDrawRectView.swift */; };
-		0D18D7FB246723DD000B0EBD /* NodeGraphScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C5246723DB000B0EBD /* NodeGraphScrollView.swift */; };
-		0D18D7FC246723DD000B0EBD /* NodeGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C6246723DB000B0EBD /* NodeGraphView.swift */; };
-		0D18D7FD246723DD000B0EBD /* NodePortKnotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C7246723DB000B0EBD /* NodePortKnotView.swift */; };
-		0D18D7FE246723DD000B0EBD /* NodePortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C8246723DB000B0EBD /* NodePortView.swift */; };
-		0D18D7FF246723DD000B0EBD /* NodeValueCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C9246723DB000B0EBD /* NodeValueCustomView.swift */; };
-		0D18D800246723DD000B0EBD /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7CA246723DB000B0EBD /* NodeView.swift */; };
-		0D18D801246723DD000B0EBD /* AudioUniformProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7CC246723DB000B0EBD /* AudioUniformProviderManager.swift */; };
-		0D18D802246723DD000B0EBD /* NodeInfoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7CD246723DB000B0EBD /* NodeInfoCacheManager.swift */; };
+		0D467180246B7B840032DF78 /* FloatCircleOutlineNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46717F246B7B840032DF78 /* FloatCircleOutlineNodeData.swift */; };
+		0D5F849B246B21AA00050D49 /* Banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F8499246B21A900050D49 /* Banner.jpg */; };
+		0D5F849C246B21AA00050D49 /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F849A246B21AA00050D49 /* Cover.png */; };
+		0D5F849E246B3D6E00050D49 /* BasicAddOperation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F849D246B3D6E00050D49 /* BasicAddOperation.jpg */; };
+		0D5F84A0246B432800050D49 /* UVNode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F849F246B432700050D49 /* UVNode.jpg */; };
+		0D5F84A2246B454B00050D49 /* UVPlusBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F84A1246B454A00050D49 /* UVPlusBlue.jpg */; };
+		0D5F84A4246B4A3000050D49 /* UVWithSinAsBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F84A3246B4A3000050D49 /* UVWithSinAsBlue.jpg */; };
+		0D5F84A7246B64DF00050D49 /* NodeList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F8498246B112100050D49 /* NodeList.txt */; };
+		0D5F84A8246B64E500050D49 /* NodeList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F8498246B112100050D49 /* NodeList.txt */; };
+		0D5F84AD246B662600050D49 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F84962469905900050D49 /* LiveViewController.swift */; };
+		0D5F84AE246B662600050D49 /* NodeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D790246723DA000B0EBD /* NodeEditorViewController.swift */; };
+		0D5F84AF246B662600050D49 /* NodeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D791246723DA000B0EBD /* NodeListTableViewController.swift */; };
+		0D5F84B0246B662600050D49 /* NodeConnectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D797246723DA000B0EBD /* NodeConnectionData.swift */; };
+		0D5F84B1246B662600050D49 /* NodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D798246723DA000B0EBD /* NodeData.swift */; };
+		0D5F84B2246B662600050D49 /* NodeGraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D799246723DA000B0EBD /* NodeGraphData.swift */; };
+		0D5F84B3246B662600050D49 /* NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79A246723DA000B0EBD /* NodePortData.swift */; };
+		0D5F84B4246B662600050D49 /* ShaderDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79B246723DA000B0EBD /* ShaderDataType.swift */; };
+		0D5F84B5246B662600050D49 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D793246723DA000B0EBD /* Constant.swift */; };
+		0D5F84B6246B662600050D49 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D794246723DA000B0EBD /* Dynamic.swift */; };
+		0D5F84B7246B662600050D49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D795246723DA000B0EBD /* Extensions.swift */; };
+		0D5F84B8246B662600050D49 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A359A246869E500585F70 /* Helper.swift */; };
+		0D5F84B9246B662600050D49 /* AudioUniformProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7CC246723DB000B0EBD /* AudioUniformProviderManager.swift */; };
+		0D5F84BA246B662600050D49 /* NodeInfoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7CD246723DB000B0EBD /* NodeInfoCacheManager.swift */; };
+		0D5F84BB246B662600050D49 /* ShaderFloatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79E246723DB000B0EBD /* ShaderFloatType.swift */; };
+		0D5F84BC246B662600050D49 /* ShaderVec2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D79F246723DB000B0EBD /* ShaderVec2Type.swift */; };
+		0D5F84BD246B662600050D49 /* ShaderVec3Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A0246723DB000B0EBD /* ShaderVec3Type.swift */; };
+		0D5F84BE246B662600050D49 /* ShaderVec4Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A1246723DB000B0EBD /* ShaderVec4Type.swift */; };
+		0D5F84BF246B662600050D49 /* FloatAddNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A3246723DB000B0EBD /* FloatAddNodeData.swift */; };
+		0D5F84C0246B662600050D49 /* FloatAddWithValueNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A4246723DB000B0EBD /* FloatAddWithValueNodeData.swift */; };
+		0D5F84C1246B662600050D49 /* FloatAtanNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A5246723DB000B0EBD /* FloatAtanNodeData.swift */; };
+		0D5F84C2246B662600050D49 /* FloatAudioDBNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A6246723DB000B0EBD /* FloatAudioDBNodeData.swift */; };
+		0D5F84C3246B662600050D49 /* FloatCircleNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A7246723DB000B0EBD /* FloatCircleNodeData.swift */; };
+		0D5F84C4246B662600050D49 /* FloatGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A8246723DB000B0EBD /* FloatGeneratorNodeData.swift */; };
+		0D5F84C5246B662600050D49 /* FloatMinusNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7A9246723DB000B0EBD /* FloatMinusNodeData.swift */; };
+		0D5F84C6246B662600050D49 /* FloatMultiplyNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AA246723DB000B0EBD /* FloatMultiplyNodeData.swift */; };
+		0D5F84C7246B662600050D49 /* FloatMultiplyWithValueNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AB246723DB000B0EBD /* FloatMultiplyWithValueNodeData.swift */; };
+		0D5F84C8246B662600050D49 /* FloatRayDiscNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AC246723DB000B0EBD /* FloatRayDiscNodeData.swift */; };
+		0D5F84C9246B662600050D49 /* FloatSinNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AD246723DB000B0EBD /* FloatSinNodeData.swift */; };
+		0D5F84CA246B662600050D49 /* FloatSmoothStepNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AE246723DB000B0EBD /* FloatSmoothStepNodeData.swift */; };
+		0D5F84CB246B662600050D49 /* FloatSmoothStepWithRangeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7AF246723DB000B0EBD /* FloatSmoothStepWithRangeNodeData.swift */; };
+		0D5F84CC246B662600050D49 /* FloatStepNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B0246723DB000B0EBD /* FloatStepNodeData.swift */; };
+		0D5F84CD246B662600050D49 /* FloatTimeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B1246723DB000B0EBD /* FloatTimeNodeData.swift */; };
+		0D5F84CF246B662600050D49 /* Vec2AddNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B2246723DB000B0EBD /* Vec2AddNodeData.swift */; };
+		0D5F84D0246B662600050D49 /* Vec2ChannelCombineNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B3246723DB000B0EBD /* Vec2ChannelCombineNodeData.swift */; };
+		0D5F84D1246B662600050D49 /* Vec2ChannelSplitNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B4246723DB000B0EBD /* Vec2ChannelSplitNodeData.swift */; };
+		0D5F84D2246B662600050D49 /* Vec2GeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B5246723DB000B0EBD /* Vec2GeneratorNodeData.swift */; };
+		0D5F84D3246B662600050D49 /* Vec2LengthNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B6246723DB000B0EBD /* Vec2LengthNodeData.swift */; };
+		0D5F84D4246B662600050D49 /* Vec2MinusNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B7246723DB000B0EBD /* Vec2MinusNodeData.swift */; };
+		0D5F84D5246B662600050D49 /* Vec2RulerGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B8246723DB000B0EBD /* Vec2RulerGeneratorNodeData.swift */; };
+		0D5F84D6246B662600050D49 /* Vec2TexCoordNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7B9246723DB000B0EBD /* Vec2TexCoordNodeData.swift */; };
+		0D5F84D7246B662600050D49 /* Vec4ChannelCombineNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BA246723DB000B0EBD /* Vec4ChannelCombineNodeData.swift */; };
+		0D5F84D8246B662600050D49 /* FloatNodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BC246723DB000B0EBD /* FloatNodePortData.swift */; };
+		0D5F84D9246B662600050D49 /* Vec2NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BD246723DB000B0EBD /* Vec2NodePortData.swift */; };
+		0D5F84DA246B662600050D49 /* Vec3NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BE246723DB000B0EBD /* Vec3NodePortData.swift */; };
+		0D5F84DB246B662600050D49 /* Vec4NodePortData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7BF246723DB000B0EBD /* Vec4NodePortData.swift */; };
+		0D5F84DC246B662600050D49 /* AxisRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C1246723DB000B0EBD /* AxisRulerView.swift */; };
+		0D5F84DD246B662600050D49 /* NodeGraphContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C3246723DB000B0EBD /* NodeGraphContainerView.swift */; };
+		0D5F84DE246B662600050D49 /* NodeGraphDrawRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C4246723DB000B0EBD /* NodeGraphDrawRectView.swift */; };
+		0D5F84DF246B662600050D49 /* NodeGraphScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C5246723DB000B0EBD /* NodeGraphScrollView.swift */; };
+		0D5F84E0246B662600050D49 /* NodeGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C6246723DB000B0EBD /* NodeGraphView.swift */; };
+		0D5F84E1246B662600050D49 /* NodePortKnotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C7246723DB000B0EBD /* NodePortKnotView.swift */; };
+		0D5F84E2246B662600050D49 /* NodePortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C8246723DB000B0EBD /* NodePortView.swift */; };
+		0D5F84E3246B662600050D49 /* NodeValueCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7C9246723DB000B0EBD /* NodeValueCustomView.swift */; };
+		0D5F84E4246B662600050D49 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18D7CA246723DB000B0EBD /* NodeView.swift */; };
+		0D5F84E8246B66A900050D49 /* FloatUVCenterAtanNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F84E7246B66A800050D49 /* FloatUVCenterAtanNodeData.swift */; };
+		0D5F84EB246B683B00050D49 /* FloatSliderGeneratorNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */; };
+		0D5F84ED246B703500050D49 /* AudioShader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F84EC246B703500050D49 /* AudioShader.jpg */; };
 		5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
 		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
 		5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */; };
@@ -172,7 +185,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D0A359524685D7A00585F70 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		0D0A359A246869E500585F70 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0D18D790246723DA000B0EBD /* NodeEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeEditorViewController.swift; sourceTree = "<group>"; };
 		0D18D791246723DA000B0EBD /* NodeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeListTableViewController.swift; sourceTree = "<group>"; };
 		0D18D793246723DA000B0EBD /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -226,6 +239,18 @@
 		0D18D7CA246723DB000B0EBD /* NodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		0D18D7CC246723DB000B0EBD /* AudioUniformProviderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUniformProviderManager.swift; sourceTree = "<group>"; };
 		0D18D7CD246723DB000B0EBD /* NodeInfoCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeInfoCacheManager.swift; sourceTree = "<group>"; };
+		0D46717F246B7B840032DF78 /* FloatCircleOutlineNodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatCircleOutlineNodeData.swift; sourceTree = "<group>"; };
+		0D5F84962469905900050D49 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		0D5F8498246B112100050D49 /* NodeList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NodeList.txt; sourceTree = "<group>"; };
+		0D5F8499246B21A900050D49 /* Banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Banner.jpg; sourceTree = "<group>"; };
+		0D5F849A246B21AA00050D49 /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
+		0D5F849D246B3D6E00050D49 /* BasicAddOperation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BasicAddOperation.jpg; sourceTree = "<group>"; };
+		0D5F849F246B432700050D49 /* UVNode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UVNode.jpg; sourceTree = "<group>"; };
+		0D5F84A1246B454A00050D49 /* UVPlusBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UVPlusBlue.jpg; sourceTree = "<group>"; };
+		0D5F84A3246B4A3000050D49 /* UVWithSinAsBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UVWithSinAsBlue.jpg; sourceTree = "<group>"; };
+		0D5F84E7246B66A800050D49 /* FloatUVCenterAtanNodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatUVCenterAtanNodeData.swift; sourceTree = "<group>"; };
+		0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatSliderGeneratorNodeData.swift; sourceTree = "<group>"; };
+		0D5F84EC246B703500050D49 /* AudioShader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AudioShader.jpg; sourceTree = "<group>"; };
 		5E086DC02051C5A7004D8D25 /* ShaderNodeEditor.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaderNodeEditor.playgroundbook; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCD2051DDB8004D8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveView.storyboard; sourceTree = "<group>"; };
@@ -433,16 +458,20 @@
 		5E7067A223678E0D0094BDEF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0D5F84962469905900050D49 /* LiveViewController.swift */,
 				0D18D790246723DA000B0EBD /* NodeEditorViewController.swift */,
 				0D18D791246723DA000B0EBD /* NodeListTableViewController.swift */,
 				0D18D797246723DA000B0EBD /* NodeConnectionData.swift */,
 				0D18D798246723DA000B0EBD /* NodeData.swift */,
+				0D46717F246B7B840032DF78 /* FloatCircleOutlineNodeData.swift */,
 				0D18D799246723DA000B0EBD /* NodeGraphData.swift */,
 				0D18D79A246723DA000B0EBD /* NodePortData.swift */,
 				0D18D79B246723DA000B0EBD /* ShaderDataType.swift */,
+				0D5F84E7246B66A800050D49 /* FloatUVCenterAtanNodeData.swift */,
 				0D18D793246723DA000B0EBD /* Constant.swift */,
 				0D18D794246723DA000B0EBD /* Dynamic.swift */,
 				0D18D795246723DA000B0EBD /* Extensions.swift */,
+				0D0A359A246869E500585F70 /* Helper.swift */,
 				0D18D7CC246723DB000B0EBD /* AudioUniformProviderManager.swift */,
 				0D18D7CD246723DB000B0EBD /* NodeInfoCacheManager.swift */,
 				0D18D79E246723DB000B0EBD /* ShaderFloatType.swift */,
@@ -455,6 +484,7 @@
 				0D18D7A6246723DB000B0EBD /* FloatAudioDBNodeData.swift */,
 				0D18D7A7246723DB000B0EBD /* FloatCircleNodeData.swift */,
 				0D18D7A8246723DB000B0EBD /* FloatGeneratorNodeData.swift */,
+				0D5F84EA246B683B00050D49 /* FloatSliderGeneratorNodeData.swift */,
 				0D18D7A9246723DB000B0EBD /* FloatMinusNodeData.swift */,
 				0D18D7AA246723DB000B0EBD /* FloatMultiplyNodeData.swift */,
 				0D18D7AB246723DB000B0EBD /* FloatMultiplyWithValueNodeData.swift */,
@@ -530,10 +560,17 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
-				0D0A359524685D7A00585F70 /* image.png */,
+				0D5F849D246B3D6E00050D49 /* BasicAddOperation.jpg */,
+				0D5F8499246B21A900050D49 /* Banner.jpg */,
+				0D5F84EC246B703500050D49 /* AudioShader.jpg */,
+				0D5F849A246B21AA00050D49 /* Cover.png */,
+				0D5F849F246B432700050D49 /* UVNode.jpg */,
+				0D5F84A1246B454A00050D49 /* UVPlusBlue.jpg */,
+				0D5F84A3246B4A3000050D49 /* UVWithSinAsBlue.jpg */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
 				5E551EC42371FC3F00784365 /* Assets.xcassets */,
+				0D5F8498246B112100050D49 /* NodeList.txt */,
 			);
 			path = PrivateResources;
 			sourceTree = "<group>";
@@ -651,6 +688,7 @@
 				TargetAttributes = {
 					5E086DBF2051C5A7004D8D25 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1110;
 					};
 					5E6F7E602368FB6A008CC191 = {
 						CreatedOnToolsVersion = 11.1;
@@ -695,10 +733,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5F84ED246B703500050D49 /* AudioShader.jpg in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
+				0D5F84A4246B4A3000050D49 /* UVWithSinAsBlue.jpg in Resources */,
 				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
+				0D5F849E246B3D6E00050D49 /* BasicAddOperation.jpg in Resources */,
+				0D5F84A0246B432800050D49 /* UVNode.jpg in Resources */,
+				0D5F84A2246B454B00050D49 /* UVPlusBlue.jpg in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
-				0D0A359624685D7A00585F70 /* image.png in Resources */,
+				0D5F849B246B21AA00050D49 /* Banner.jpg in Resources */,
+				0D5F84A8246B64E500050D49 /* NodeList.txt in Resources */,
+				0D5F849C246B21AA00050D49 /* Cover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +751,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5F84A7246B64DF00050D49 /* NodeList.txt in Resources */,
 				5EA2E3CA2056F35B00416A35 /* LiveViewTestAppLaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,59 +790,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D18D7D5246723DC000B0EBD /* NodeGraphData.swift in Sources */,
-				0D18D7F0246723DD000B0EBD /* Vec2MinusNodeData.swift in Sources */,
-				0D18D7FC246723DD000B0EBD /* NodeGraphView.swift in Sources */,
-				0D18D7FE246723DD000B0EBD /* NodePortView.swift in Sources */,
-				0D18D7D2246723DB000B0EBD /* Extensions.swift in Sources */,
-				0D18D7E5246723DC000B0EBD /* FloatRayDiscNodeData.swift in Sources */,
-				0D18D7E3246723DC000B0EBD /* FloatMultiplyNodeData.swift in Sources */,
-				0D18D7E9246723DC000B0EBD /* FloatStepNodeData.swift in Sources */,
-				0D18D7DD246723DC000B0EBD /* FloatAddWithValueNodeData.swift in Sources */,
-				0D18D7E4246723DC000B0EBD /* FloatMultiplyWithValueNodeData.swift in Sources */,
-				0D18D7E8246723DC000B0EBD /* FloatSmoothStepWithRangeNodeData.swift in Sources */,
-				0D18D7F6246723DD000B0EBD /* Vec3NodePortData.swift in Sources */,
-				0D18D801246723DD000B0EBD /* AudioUniformProviderManager.swift in Sources */,
-				0D18D7D3246723DC000B0EBD /* NodeConnectionData.swift in Sources */,
-				0D18D7CE246723DB000B0EBD /* NodeEditorViewController.swift in Sources */,
-				0D18D7D9246723DC000B0EBD /* ShaderVec2Type.swift in Sources */,
-				0D18D7F3246723DD000B0EBD /* Vec4ChannelCombineNodeData.swift in Sources */,
-				0D18D7F4246723DD000B0EBD /* FloatNodePortData.swift in Sources */,
-				0D18D7E2246723DC000B0EBD /* FloatMinusNodeData.swift in Sources */,
-				0D18D7DA246723DC000B0EBD /* ShaderVec3Type.swift in Sources */,
-				0D18D7EF246723DD000B0EBD /* Vec2LengthNodeData.swift in Sources */,
-				0D18D800246723DD000B0EBD /* NodeView.swift in Sources */,
-				0D18D7FD246723DD000B0EBD /* NodePortKnotView.swift in Sources */,
-				0D18D7EE246723DD000B0EBD /* Vec2GeneratorNodeData.swift in Sources */,
-				0D18D7E6246723DC000B0EBD /* FloatSinNodeData.swift in Sources */,
-				0D18D7ED246723DD000B0EBD /* Vec2ChannelSplitNodeData.swift in Sources */,
-				0D18D7D4246723DC000B0EBD /* NodeData.swift in Sources */,
-				0D18D7D1246723DB000B0EBD /* Dynamic.swift in Sources */,
-				0D18D7DC246723DC000B0EBD /* FloatAddNodeData.swift in Sources */,
-				0D18D7FF246723DD000B0EBD /* NodeValueCustomView.swift in Sources */,
-				0D18D7F2246723DD000B0EBD /* Vec2TexCoordNodeData.swift in Sources */,
-				0D18D802246723DD000B0EBD /* NodeInfoCacheManager.swift in Sources */,
-				0D18D7D6246723DC000B0EBD /* NodePortData.swift in Sources */,
-				0D18D7E7246723DC000B0EBD /* FloatSmoothStepNodeData.swift in Sources */,
-				0D18D7EB246723DC000B0EBD /* Vec2AddNodeData.swift in Sources */,
-				0D18D7EC246723DC000B0EBD /* Vec2ChannelCombineNodeData.swift in Sources */,
-				0D18D7E0246723DC000B0EBD /* FloatCircleNodeData.swift in Sources */,
-				0D18D7FB246723DD000B0EBD /* NodeGraphScrollView.swift in Sources */,
-				0D18D7E1246723DC000B0EBD /* FloatGeneratorNodeData.swift in Sources */,
-				0D18D7CF246723DB000B0EBD /* NodeListTableViewController.swift in Sources */,
-				0D18D7D7246723DC000B0EBD /* ShaderDataType.swift in Sources */,
-				0D18D7F8246723DD000B0EBD /* AxisRulerView.swift in Sources */,
-				0D18D7D8246723DC000B0EBD /* ShaderFloatType.swift in Sources */,
-				0D18D7DB246723DC000B0EBD /* ShaderVec4Type.swift in Sources */,
-				0D18D7D0246723DB000B0EBD /* Constant.swift in Sources */,
-				0D18D7F9246723DD000B0EBD /* NodeGraphContainerView.swift in Sources */,
-				0D18D7F1246723DD000B0EBD /* Vec2RulerGeneratorNodeData.swift in Sources */,
-				0D18D7DE246723DC000B0EBD /* FloatAtanNodeData.swift in Sources */,
-				0D18D7DF246723DC000B0EBD /* FloatAudioDBNodeData.swift in Sources */,
-				0D18D7F5246723DD000B0EBD /* Vec2NodePortData.swift in Sources */,
-				0D18D7F7246723DD000B0EBD /* Vec4NodePortData.swift in Sources */,
-				0D18D7FA246723DD000B0EBD /* NodeGraphDrawRectView.swift in Sources */,
-				0D18D7EA246723DC000B0EBD /* FloatTimeNodeData.swift in Sources */,
+				0D5F84AD246B662600050D49 /* LiveViewController.swift in Sources */,
+				0D5F84AE246B662600050D49 /* NodeEditorViewController.swift in Sources */,
+				0D5F84AF246B662600050D49 /* NodeListTableViewController.swift in Sources */,
+				0D5F84B0246B662600050D49 /* NodeConnectionData.swift in Sources */,
+				0D5F84B1246B662600050D49 /* NodeData.swift in Sources */,
+				0D5F84B2246B662600050D49 /* NodeGraphData.swift in Sources */,
+				0D5F84B3246B662600050D49 /* NodePortData.swift in Sources */,
+				0D5F84B4246B662600050D49 /* ShaderDataType.swift in Sources */,
+				0D5F84B5246B662600050D49 /* Constant.swift in Sources */,
+				0D5F84B6246B662600050D49 /* Dynamic.swift in Sources */,
+				0D5F84B7246B662600050D49 /* Extensions.swift in Sources */,
+				0D5F84B8246B662600050D49 /* Helper.swift in Sources */,
+				0D467180246B7B840032DF78 /* FloatCircleOutlineNodeData.swift in Sources */,
+				0D5F84B9246B662600050D49 /* AudioUniformProviderManager.swift in Sources */,
+				0D5F84BA246B662600050D49 /* NodeInfoCacheManager.swift in Sources */,
+				0D5F84BB246B662600050D49 /* ShaderFloatType.swift in Sources */,
+				0D5F84BC246B662600050D49 /* ShaderVec2Type.swift in Sources */,
+				0D5F84BD246B662600050D49 /* ShaderVec3Type.swift in Sources */,
+				0D5F84BE246B662600050D49 /* ShaderVec4Type.swift in Sources */,
+				0D5F84BF246B662600050D49 /* FloatAddNodeData.swift in Sources */,
+				0D5F84C0246B662600050D49 /* FloatAddWithValueNodeData.swift in Sources */,
+				0D5F84C1246B662600050D49 /* FloatAtanNodeData.swift in Sources */,
+				0D5F84C2246B662600050D49 /* FloatAudioDBNodeData.swift in Sources */,
+				0D5F84EB246B683B00050D49 /* FloatSliderGeneratorNodeData.swift in Sources */,
+				0D5F84C3246B662600050D49 /* FloatCircleNodeData.swift in Sources */,
+				0D5F84C4246B662600050D49 /* FloatGeneratorNodeData.swift in Sources */,
+				0D5F84C5246B662600050D49 /* FloatMinusNodeData.swift in Sources */,
+				0D5F84C6246B662600050D49 /* FloatMultiplyNodeData.swift in Sources */,
+				0D5F84C7246B662600050D49 /* FloatMultiplyWithValueNodeData.swift in Sources */,
+				0D5F84C8246B662600050D49 /* FloatRayDiscNodeData.swift in Sources */,
+				0D5F84C9246B662600050D49 /* FloatSinNodeData.swift in Sources */,
+				0D5F84CA246B662600050D49 /* FloatSmoothStepNodeData.swift in Sources */,
+				0D5F84CB246B662600050D49 /* FloatSmoothStepWithRangeNodeData.swift in Sources */,
+				0D5F84CC246B662600050D49 /* FloatStepNodeData.swift in Sources */,
+				0D5F84CD246B662600050D49 /* FloatTimeNodeData.swift in Sources */,
+				0D5F84CF246B662600050D49 /* Vec2AddNodeData.swift in Sources */,
+				0D5F84D0246B662600050D49 /* Vec2ChannelCombineNodeData.swift in Sources */,
+				0D5F84D1246B662600050D49 /* Vec2ChannelSplitNodeData.swift in Sources */,
+				0D5F84D2246B662600050D49 /* Vec2GeneratorNodeData.swift in Sources */,
+				0D5F84D3246B662600050D49 /* Vec2LengthNodeData.swift in Sources */,
+				0D5F84D4246B662600050D49 /* Vec2MinusNodeData.swift in Sources */,
+				0D5F84D5246B662600050D49 /* Vec2RulerGeneratorNodeData.swift in Sources */,
+				0D5F84D6246B662600050D49 /* Vec2TexCoordNodeData.swift in Sources */,
+				0D5F84D7246B662600050D49 /* Vec4ChannelCombineNodeData.swift in Sources */,
+				0D5F84D8246B662600050D49 /* FloatNodePortData.swift in Sources */,
+				0D5F84D9246B662600050D49 /* Vec2NodePortData.swift in Sources */,
+				0D5F84DA246B662600050D49 /* Vec3NodePortData.swift in Sources */,
+				0D5F84DB246B662600050D49 /* Vec4NodePortData.swift in Sources */,
+				0D5F84DC246B662600050D49 /* AxisRulerView.swift in Sources */,
+				0D5F84DD246B662600050D49 /* NodeGraphContainerView.swift in Sources */,
+				0D5F84E8246B66A900050D49 /* FloatUVCenterAtanNodeData.swift in Sources */,
+				0D5F84DE246B662600050D49 /* NodeGraphDrawRectView.swift in Sources */,
+				0D5F84DF246B662600050D49 /* NodeGraphScrollView.swift in Sources */,
+				0D5F84E0246B662600050D49 /* NodeGraphView.swift in Sources */,
+				0D5F84E1246B662600050D49 /* NodePortKnotView.swift in Sources */,
+				0D5F84E2246B662600050D49 /* NodePortView.swift in Sources */,
+				0D5F84E3246B662600050D49 /* NodeValueCustomView.swift in Sources */,
+				0D5F84E4246B662600050D49 /* NodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,14 +935,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "$(PLAYGROUND_BOOK_CONTENT_VERSION)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -899,13 +958,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "$(PLAYGROUND_BOOK_CONTENT_VERSION)";
 				INSTALL_PATH = /;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

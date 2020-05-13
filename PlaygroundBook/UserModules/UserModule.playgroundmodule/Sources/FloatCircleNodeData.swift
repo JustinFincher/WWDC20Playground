@@ -1,6 +1,6 @@
 import UIKit
 
-class FloatCircleNodeData: NodeData
+@objc(FloatCircleNodeData) class FloatCircleNodeData: NodeData
 {
     override class var defaultTitle: String { return "Float Circle" }
     override class var defaultCanHavePreview: Bool { return true }
@@ -25,7 +25,7 @@ class FloatCircleNodeData: NodeData
         """
         \(shaderCommentHeader())
         \(declareInPortsExpression())
-        \(outPorts[0].requiredType.defaultCGType) \(outPorts[0].getPortVariableName()) = 1.0 - smoothstep(\(inPorts[1].getPortVariableName())-(\(inPorts[1].getPortVariableName())*0.01), \(inPorts[1].getPortVariableName())+(\(inPorts[1].getPortVariableName())*0.01), dot(\(inPorts[0].getPortVariableName())-vec2(0.5),\(inPorts[0].getPortVariableName())-vec2(0.5))*4.0);
+        \(outPorts[0].requiredType.defaultCGType) \(outPorts[0].getPortVariableName()) = smoothstep(\(inPorts[1].getPortVariableName()), \(inPorts[1].getPortVariableName()), length(\(inPorts[0].getPortVariableName()) - vec2(0.5,0.5)));
         """
         return result
     }
